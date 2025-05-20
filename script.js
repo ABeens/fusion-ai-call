@@ -1,4 +1,4 @@
-const socket = io("http://localhost:5001", {
+const socket = io("https://fusion-ai-call-manager.space", {
     reconnection: true,
     reconnectionAttempts: 10,
     reconnectionDelay: 1000,
