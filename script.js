@@ -1,4 +1,4 @@
-const socket = io("https://abeens-fusion-ai-call-manager.hf.space", {
+const socket = io("wss://abeens-fusion-ai-call-manager.hf.space", {
     reconnection: true,
     reconnectionAttempts: 10,
     reconnectionDelay: 1000,
