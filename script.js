@@ -1,4 +1,4 @@
-const socket = io("https://fusion-ai-call-manager.space", {
+const socket = io("https://fusion-ai-call-manager.hf.space", {
     reconnection: true,
     reconnectionAttempts: 10,
     reconnectionDelay: 1000,
