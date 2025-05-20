@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FusionHit Call</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="logo">
+            <img src="https://fusionhit.com/wp-content/uploads/2023/03/fusionhit-logo.png" alt="FusionHit Logo">
+        </div>
+
+        <div class="left-panel">
+            <div class="connection-status">
+                <span id="connectionStatus">Desconectado</span>
+            </div>
+
+            <div class="room-controls">
+                <input type="text" id="room" placeholder="ID de Sala">
+                <input type="text" id="usernameInput" placeholder="Nombre de Usuario">
+                <input type="password" id="usernamePassword" placeholder="Contraseña">
+                <button id="joinBtn" disabled>Unirse</button>
+            </div>
+
+            <div id="userInfo" class="user-info">
+                <h3>Información del Usuario</h3>
+                <p>Usuario: <span id="usernameDisplay"></span></p>
+                <p>Sala: <span id="roomNumber"></span></p>
+            </div>
+
+            <button id="hangupBtn" disabled>Finalizar Llamada</button>
+        </div>
+
+        <div class="right-panel">
+            <div id="audioContainer" style="display: none;" class="audio-container"></div>
+
+            <div class="logs-container">
+                <div class="transcription-container">
+                    <h3>Transcripción</h3>
+                    <div id="transcriptionLog" class="transcription-log"></div>
+                </div>
+
+                <div class="debug-container">
+                    <h3>Log de Depuración</h3>
+                    <div id="debugLog" class="debug-log"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
