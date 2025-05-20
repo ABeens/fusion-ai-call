@@ -2,7 +2,8 @@ const socket = io("https://abeens-fusion-ai-call-manager.hf.space", {
     reconnection: true,
     reconnectionAttempts: 10,
     reconnectionDelay: 1000,
-    timeout: 20000
+    timeout: 20000,
+    transports: ['websocket', 'polling']
 });
 
 let peerConnection;
