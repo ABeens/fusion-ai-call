@@ -157,7 +157,7 @@ button:disabled {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     flex: 1;
-    min-height: 0; /* Importante para que el grid funcione correctamente */
+    min-height: 50vh; /* Importante para que el grid funcione correctamente */
 }
 
 .transcription-container, .debug-container {
@@ -167,6 +167,7 @@ button:disabled {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
+    min-height: 50vh;
     overflow: scroll; /* Previene scroll en el contenedor principal */
 }
 
